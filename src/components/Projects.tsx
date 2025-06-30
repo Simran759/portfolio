@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-const allProjects = [
+const allProjects =  [
   {
     title: "ESports Tournament Management System",
     description: "A comprehensive full-stack eSports tournament management system featuring real-time player scheduling, automated result tracking, and dynamic ranking management with secure API integration.",
@@ -53,7 +53,25 @@ const allProjects = [
     status: "Active",
     liveLink: "https://simran759.github.io/Currency_convertor/",
     codeLink: "https://github.com/Simran759/Currency_convertor"
+  },
+  {
+    title: "To-Do List Web App",
+    description: "A responsive and interactive task management app with persistent storage for managing daily goals and to-dos across sessions.",
+    technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
+    features: [
+      "Add, delete, and track tasks in a responsive interface",
+      "Data persists across browser sessions using LocalStorage",
+      "Lightweight and intuitive user experience for daily planning"
+    ],
+    type: "Frontend",
+    category: "Browser App",
+    color: "from-yellow-500 to-amber-600",
+    status: "Completed",
+    liveLink: "https://simran759.github.io/To-do-list-/",
+    codeLink: "https://github.com/Simran759/To-do-list-"
   }
+
+
 ];
 
 const filterTabs = ["All", "Full Stack", "Frontend"];
