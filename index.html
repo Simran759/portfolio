@@ -9,10 +9,44 @@
     <meta name="author" content="Simran Bajaj" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/favicon.png" /> 
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Tailwind CSS CDN (for styling) -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Portfolio Card Section -->
+    <div class="min-h-screen flex items-center justify-center px-4">
+      <div class="max-w-md w-full bg-white border border-gray-200 rounded-xl shadow-lg p-6">
+        <!-- Portfolio Image -->
+        <img
+          src="/portfolio-preview.png"
+          alt="Portfolio Screenshot"
+          class="w-full h-auto rounded-lg mb-5 border"
+        />
+
+        <!-- Title -->
+        <h1 class="text-2xl font-bold text-gray-800 mb-2">My Portfolio Website</h1>
+
+        <!-- Description -->
+        <p class="text-gray-600 mb-4">
+          Explore my work, skills, and achievements in an interactive and minimal portfolio experience.
+        </p>
+
+        <!-- Visit Button -->
+        <a
+          href="https://portfolio-nine-chi-82.vercel.app/"
+          target="_blank"
+          class="inline-block w-full text-center bg-blue-600 text-white px-4 py-2 rounded-md font-medium hover:bg-blue-700 transition"
+        >
+          Visit Portfolio
+        </a>
+      </div>
+    </div>
+
+    <!-- React App Root (if using React) -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
