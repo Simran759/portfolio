@@ -8,39 +8,31 @@ const skillCategories = [
     title: "Programming Languages",
     description: "Core languages and scripting expertise",
     skills: ["C++", "Python", "HTML", "CSS", "JavaScript", "SQL", "PostgreSQL"],
-    gradient: "from-blue-500 to-blue-600",
-    bgColor: "bg-blue-50",
-    borderColor: "border-blue-100"
+    gradient: "from-blue-500 to-blue-600"
   },
   {
     title: "Developer Tools",
     description: "Preferred tools for development and collaboration",
     skills: ["VS Code", "Git", "GitHub", "LaTeX", "Google Colab", "MongoDB Compass"],
-    gradient: "from-green-500 to-green-600",
-    bgColor: "bg-green-50",
-    borderColor: "border-green-100"
+    gradient: "from-green-500 to-green-600"
   },
   {
     title: "Technologies / Frameworks",
     description: "Libraries and frameworks for building performant apps",
     skills: ["Figma", "Next.js", "React.js", "Node.js", "Express.js", "MongoDB"],
-    gradient: "from-purple-500 to-purple-600",
-    bgColor: "bg-purple-50",
-    borderColor: "border-purple-100"
+    gradient: "from-purple-500 to-purple-600"
   },
   {
     title: "Relevant Courses",
     description: "Conceptual knowledge through academic courses",
     skills: ["Data Structures", "Algorithms", "Data PreProcessing", "Machine Learning", "DBMS", "OOP", "Computer Networks"],
-    gradient: "from-indigo-500 to-indigo-600",
-    bgColor: "bg-indigo-50",
-    borderColor: "border-indigo-100"
+    gradient: "from-indigo-500 to-indigo-600"
   }
 ];
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-950 transition-colors">
+    <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 bg-background text-foreground">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <motion.div
@@ -50,10 +42,10 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-4xl font-bold mb-4">
             Technical Skills
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-3xl mx-auto">
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
             My toolbox spans full-stack engineering, clean code, and modern development practices.
           </p>
         </motion.div>
@@ -68,17 +60,15 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.2 }}
             >
-              <Card
-                className={`${category.bgColor} ${category.borderColor} border rounded-2xl shadow-sm hover:shadow-md transition-all duration-300`}
-              >
+              <Card className="bg-card border border-border rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <div className="flex items-center space-x-3 mb-2">
                     <div className={`w-4 h-4 rounded-full bg-gradient-to-r ${category.gradient}`} />
-                    <CardTitle className="text-gray-900 dark:text-white text-xl font-semibold">
+                    <CardTitle className="text-foreground text-xl font-semibold">
                       {category.title}
                     </CardTitle>
                   </div>
-                  <CardDescription className="text-gray-600 dark:text-gray-400">
+                  <CardDescription className="text-muted-foreground">
                     {category.description}
                   </CardDescription>
                 </CardHeader>
@@ -92,7 +82,7 @@ const Skills = () => {
                       >
                         <Badge
                           variant="outline"
-                          className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 px-3 py-1 text-xs font-medium rounded-md shadow-sm"
+                          className="bg-muted border border-border text-foreground px-3 py-1 text-xs font-medium rounded-md shadow-sm"
                         >
                           {skill}
                         </Badge>
@@ -138,8 +128,8 @@ const Skills = () => {
               <div className={`w-16 h-16 bg-gradient-to-br ${area.color} rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg`}>
                 {area.icon}
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{area.title}</h3>
-              <p className="text-gray-600 dark:text-gray-400">{area.description}</p>
+              <h3 className="text-xl font-semibold text-foreground mb-2">{area.title}</h3>
+              <p className="text-muted-foreground">{area.description}</p>
             </motion.div>
           ))}
         </div>

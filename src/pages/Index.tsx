@@ -91,15 +91,16 @@ const Index = () => {
       </nav>
 
       {/* Main Content */}
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Achievements />
-        <Skills />
-        <Experience />
-        <Contact />
-      </main>
+     <main className="pt-20 bg-background text-foreground transition-colors duration-300">
+  <Hero />
+  <About />
+  <Projects />
+  <Achievements />
+  <Skills />
+  <Experience />
+  <Contact />
+</main>
+
     </div>
   );
 };

@@ -53,16 +53,16 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-background text-foreground">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Leadership Timeline</h2>
-          <p className="text-gray-600 italic text-lg max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold text-foreground mb-4">Leadership Timeline</h2>
+          <p className="text-muted-foreground italic text-lg max-w-3xl mx-auto">
             I strive to lead with purpose, inspire with vision, and execute with precision. Each role represents a step forward in fostering impactful collaboration and technical excellence.
           </p>
         </div>
 
-        <div className="relative border-l-2 border-gray-300 ml-4 space-y-12">
+        <div className="relative border-l-2 border-border ml-4 space-y-12">
           {experiences.map((experience, index) => (
             <motion.div
               key={index}
@@ -72,28 +72,28 @@ const Experience = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <Card className="bg-white border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300">
+              <Card className="bg-card border border-border shadow-md hover:shadow-xl transition-all duration-300">
                 <CardHeader className="pb-2">
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
                     <div className="space-y-2">
                       <div className="flex items-center gap-3 flex-wrap">
-                        <CardTitle className="text-gray-900 text-xl">{experience.title}</CardTitle>
+                        <CardTitle className="text-card-foreground text-xl">{experience.title}</CardTitle>
                         <Badge className={`bg-gradient-to-r ${experience.color} text-white border-none px-3 py-1`}>
                           {experience.type}
                         </Badge>
                       </div>
-                      <CardDescription className="text-blue-600 font-semibold text-lg">
+                      <CardDescription className="text-primary font-semibold text-lg">
                         {experience.organization}
                       </CardDescription>
                     </div>
 
-                    <div className="flex flex-col gap-2 text-sm text-gray-600">
+                    <div className="flex flex-col gap-2 text-sm text-muted-foreground">
                       <div className="flex items-center gap-2">
-                        <Calendar className="h-4 w-4 text-blue-600" />
+                        <Calendar className="h-4 w-4 text-primary" />
                         <span>{experience.period}</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <MapPin className="h-4 w-4 text-blue-600" />
+                        <MapPin className="h-4 w-4 text-primary" />
                         <span>{experience.location}</span>
                       </div>
                     </div>
@@ -101,16 +101,16 @@ const Experience = () => {
                 </CardHeader>
 
                 <CardContent className="space-y-6">
-                  <p className="text-gray-700 leading-relaxed text-base">{experience.description}</p>
-                  <div className="bg-blue-50 rounded-lg p-4">
-                    <h4 className="text-gray-900 font-semibold mb-3 flex items-center">
-                      <Award className="h-4 w-4 mr-2 text-blue-600" />
+                  <p className="text-muted-foreground leading-relaxed text-base">{experience.description}</p>
+                  <div className="bg-muted rounded-lg p-4">
+                    <h4 className="text-card-foreground font-semibold mb-3 flex items-center">
+                      <Award className="h-4 w-4 mr-2 text-primary" />
                       Key Responsibilities
                     </h4>
                     <ul className="space-y-2">
                       {experience.responsibilities.map((resp, idx) => (
-                        <li key={idx} className="text-gray-700 flex items-start text-sm">
-                          <span className="text-blue-600 mr-3 mt-1 font-bold">•</span>
+                        <li key={idx} className="text-muted-foreground flex items-start text-sm">
+                          <span className="text-primary mr-3 mt-1 font-bold">•</span>
                           <span className="flex-1">{resp}</span>
                         </li>
                       ))}
