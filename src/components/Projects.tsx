@@ -69,12 +69,32 @@ const allProjects =  [
     status: "Completed",
     liveLink: "https://simran759.github.io/To-do-list-/",
     codeLink: "https://github.com/Simran759/To-do-list-"
-  }
+  },
+{
+  title: "Fake News Detection using Random Forest",
+  description: "A machine learning model that predicts whether a news headline is real or fake using Random Forest and natural language preprocessing. Built for speed and interpretability by focusing on news titles only.",
+  technologies: ["Python", "Streamlit", "Scikit-learn", "NLTK", "TfidfVectorizer"],
+  features: [
+    "Predicts news authenticity based on titles with 93% accuracy",
+    "Random Forest model ensures robustness and avoids overfitting",
+    "TF-IDF + Lemmatization preprocessing pipeline for cleaner features",
+    "Streamlit UI for real-time headline prediction experience"
+  ],
+  type: "Machine Learning",
+  category: "Classification",
+  color: "from-red-600 to-pink-600",
+  status: "Live",
+  liveLink: "https://newsspam-yutxkyvh7br8fakbeqjwb4.streamlit.app/",
+  codeLink: "https://github.com/Simran759/NewsSpam"
+}
+
+
 
 
 ];
 
-const filterTabs = ["All", "Full Stack", "Frontend"];
+const filterTabs = ["All", "Full Stack", "Frontend", "Machine Learning"];
+
 
 const Projects = () => {
   const [selected, setSelected] = useState("All");

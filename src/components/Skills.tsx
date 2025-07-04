@@ -17,11 +17,24 @@ const skillCategories = [
     gradient: "from-green-500 to-green-600"
   },
   {
-    title: "Technologies / Frameworks",
-    description: "Libraries and frameworks for building performant apps",
-    skills: ["Figma", "Next.js", "React.js", "Node.js", "Express.js", "MongoDB"],
-    gradient: "from-purple-500 to-purple-600"
-  },
+  title: "Technologies / Frameworks",
+  description: "Libraries and frameworks for building performant apps",
+  skills: [
+    "Next.js",
+    "React.js",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "scikit-learn",        
+    "Pandas",               
+    "NumPy",               
+    "Matplotlib",
+    "Flask"   ,        
+    "Streamlit"             
+  ],
+  gradient: "from-purple-500 to-purple-600"
+}
+,
   {
     title: "Relevant Courses",
     description: "Conceptual knowledge through academic courses",
