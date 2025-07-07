@@ -72,13 +72,12 @@ const allProjects =  [
   },
 {
   title: "Fake News Detection using Random Forest",
-  description: "A machine learning model that predicts whether a news headline is real or fake using Random Forest and natural language preprocessing. Built for speed and interpretability by focusing on news titles only.",
+  description: "A machine learning app that detects whether a news headline is real or fake using NLP and a Random Forest classifier.",
   technologies: ["Python", "Streamlit", "Scikit-learn", "NLTK", "TfidfVectorizer"],
   features: [
-    "Predicts news authenticity based on titles with 93% accuracy",
-    "Random Forest model ensures robustness and avoids overfitting",
-    "TF-IDF + Lemmatization preprocessing pipeline for cleaner features",
-    "Streamlit UI for real-time headline prediction experience"
+    "Detects fake news headlines with 93% accuracy using TF-IDF + Random Forest",
+    "Robust preprocessing: tokenization, stopword removal, and vectorization",
+    "Interactive Streamlit UI for real-time prediction experience"
   ],
   type: "Machine Learning",
   category: "Classification",
@@ -86,7 +85,26 @@ const allProjects =  [
   status: "Live",
   liveLink: "https://newsspam-yutxkyvh7br8fakbeqjwb4.streamlit.app/",
   codeLink: "https://github.com/Simran759/NewsSpam"
+},
+{
+  title: "English Song Recommender App",
+  description: "A Streamlit-based recommendation system that suggests songs based on lyrics using TF-IDF and BERT semantic embeddings.",
+  technologies: ["Python", "Streamlit", "Pandas", "Scikit-learn", "NLTK", "Hugging Face", "SentenceTransformers"],
+  features: [
+    "Recommends similar English songs using both TF-IDF (fast) and BERT (semantic)",
+    "Processes 10K+ songs with NLP and Hugging Face SentenceTransformers",
+    "User-friendly UI with customizable results and export to CSV/PDF"
+  ],
+  type: "Machine Learning",
+  category: "Recommendation System",
+  color: "from-indigo-600 to-purple-600",
+  status: "Live",
+  liveLink: "https://englishsongrecommneder-w4m7cu4wufjp9s57j6y3gd.streamlit.app/",
+  codeLink: "https://github.com/Simran759/english_song_recommneder"
 }
+
+
+
 
 
 

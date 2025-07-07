@@ -13,7 +13,7 @@ const skillCategories = [
   {
     title: "Developer Tools",
     description: "Preferred tools for development and collaboration",
-    skills: ["VS Code", "Git", "GitHub", "LaTeX", "Google Colab", "MongoDB Compass"],
+    skills: ["VS Code", "Git", "GitHub", "LaTeX", "Google Colab", "MongoDB Compass","PostMan"],
     gradient: "from-green-500 to-green-600"
   },
   {
@@ -30,7 +30,10 @@ const skillCategories = [
     "NumPy",               
     "Matplotlib",
     "Flask"   ,        
-    "Streamlit"             
+    "Streamlit",
+  "TailWind CSS" ,
+  "TypeScript" ,
+         
   ],
   gradient: "from-purple-500 to-purple-600"
 }
